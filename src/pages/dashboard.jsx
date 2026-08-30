@@ -1,9 +1,11 @@
 
 import '../index.css'
-import Sidebar from '../components/Sidebar'
-import Topbar from '../components/Topbar'
+import Sidebar from '../components/dashboard/sidebar'
+import Topbar from '../components/dashboard/Topbar'
 import { useState } from 'react'
-import Card from '../components/Card'
+import Card from '../components/dashboard/Card'
+import Grafik from '../components/dashboard/Grafik'
+import Transaksi from '../components/dashboard/Transaksi'
 
 const Dashboard = () => {
 
@@ -18,7 +20,13 @@ const Dashboard = () => {
                 {/* Main */}
                 <div className='w-full'>
                     <Topbar navigasi={setIsSidebar} />
-                    <Card /></div>
+                    <Card/>
+                    <div>
+                        <Grafik />
+                        <Transaksi/>
+                    </div>
+                </div>
+
             </div>
         </>
     )

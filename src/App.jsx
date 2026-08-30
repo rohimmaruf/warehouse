@@ -1,6 +1,6 @@
-import Dashboard from './pages/dashboard'
-import DataBarang from './pages/dataBarang'
-import ProductForm from './pages/productForm'
+import Dashboard from './pages/Dashboard'
+import DataBarang from './pages/Databarang'
+import ProductForm from './pages/Productform'
 import './index.css'
 
 function App() {

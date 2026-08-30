@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ProductForm from "./productForm"
+import ProductForm from "./Productform"
 
 const DataBarang = () => {
 
