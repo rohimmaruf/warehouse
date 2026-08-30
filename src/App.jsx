@@ -1,13 +1,14 @@
-
-import './App.css'
+import Dashboard from './pages/dashboard'
 import DataBarang from './pages/dataBarang'
 import ProductForm from './pages/productForm'
+import './index.css'
 
 function App() {
 
   return (
     <main>
-      <DataBarang/>
+      <Dashboard/>
+      {/* <DataBarang/> */}
       {/* <ProductForm/ > */}
     </main>
   )
