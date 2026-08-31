@@ -7,6 +7,7 @@ import Card from '../components/dashboard/Card'
 import Grafik from '../components/dashboard/Grafik'
 import Transaksi from '../components/dashboard/Transaksi'
 import Stokmenipis from '../components/dashboard/Stokmenipis'
+import Aksicepat from '../components/dashboard/Aksicepat'
 
 const Dashboard = () => {
 
@@ -29,6 +30,7 @@ const Dashboard = () => {
                     </div>
                     <div>
                         <Stokmenipis/>
+                        <Aksicepat/>
                     </div>
                     </div>
                 </div>

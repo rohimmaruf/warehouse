@@ -1,7 +1,7 @@
 import { Mouse } from "lucide-react"
 
 const Itemstok = ({ item }) => {
-    const { nama, kategori, lokasi, stok, minimum,  } = item
+    const { nama, kategori, lokasi, stok, minimum, icon,  } = item
 
     return (
         <div className="flex justify-between">

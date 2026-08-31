@@ -6,6 +6,7 @@ const stokmenipis = [
         lokasi: "Rak A1",
         stok: 5,
         minimum: 10,
+        icon: "Mouse",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const stokmenipis = [
         lokasi: "Rak A2",
         stok: 3,
         minimum: 8,
+        icon: "Keyboard",
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const stokmenipis = [
         lokasi: "Rak B1",
         stok: 2,
         minimum: 10,
+        icon: "Packageopen",
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ const stokmenipis = [
         lokasi: "Rak B2",
         stok: 4,
         minimum: 6,
+        icon: "Droplet",
     },
 ]
 
