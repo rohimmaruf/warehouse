@@ -4,14 +4,14 @@ import TitleGrid from "./Titlegrid"
 
 const Transaksi = () => {
 
-    console.log(transaksi);
+    // console.log(transaksi);
 
 
     return (
-        <div>
-            <TitleGrid title="Transaksi Baru" childer={
+        <div className="overflow">
+            <TitleGrid title="Transaksi Baru" sidetitle="Lihat Semua" childer={
                 <table className="">
-                    <thead className="decori">
+                    <thead className="">
                         <tr>
                             <th>Tanggal</th>
                             <th>Jenis</th>

@@ -6,6 +6,7 @@ const transaksi = [
     barang: "Mouse Logitech",
     jumlah: "10 Pcs",
     keterangan: "Stok tambahan",
+    icon: "Mouse"
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const transaksi = [
     barang: "Keyboard Wireless",
     jumlah: "2 Pcs",
     keterangan: "Digunakan produksi",
+    icon: "Keyboard"
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const transaksi = [
     barang: "Kertas A4 70gr",
     jumlah: "5 Rim",
     keterangan: "Pembelian rutin",
+    icon: "Packageopen"
   },
   {
     id: 4,
@@ -30,15 +33,9 @@ const transaksi = [
     barang: "Tinta Printer Epson",
     jumlah: "1 Botol",
     keterangan: "Perawatan printer",
+    icon: "Droplet"
   },
-  {
-    id: 5,
-    tanggal: "23/08/2026 11:05",
-    jenis: "Masuk",
-    barang: "Flashdisk 32GB",
-    jumlah: "15 Pcs",
-    keterangan: "Pengadaan baru",
-  },
+
 ];
 
 export default transaksi;

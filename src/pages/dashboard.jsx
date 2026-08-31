@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Card from '../components/dashboard/Card'
 import Grafik from '../components/dashboard/Grafik'
 import Transaksi from '../components/dashboard/Transaksi'
+import Stokmenipis from '../components/dashboard/Stokmenipis'
 
 const Dashboard = () => {
 
@@ -21,9 +22,14 @@ const Dashboard = () => {
                 <div className='w-full'>
                     <Topbar navigasi={setIsSidebar} />
                     <Card/>
-                    <div>
+                    <div className='flex'>
+                        <div>
                         <Grafik />
                         <Transaksi/>
+                    </div>
+                    <div>
+                        <Stokmenipis/>
+                    </div>
                     </div>
                 </div>
 
