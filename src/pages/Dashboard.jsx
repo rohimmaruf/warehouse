@@ -1,6 +1,6 @@
 
 import '../index.css'
-import Sidebar from '../components/dashboard/sidebar'
+import Sidebar from '../components/dashboard/Sidebar'
 import Topbar from '../components/dashboard/Topbar'
 import { useState } from 'react'
 import Card from '../components/dashboard/Card'
