@@ -8,7 +8,7 @@ const Stokmenipis = () => {
     
 
     return(
-        <div className="flex w-2xl ">
+        <div className="flex ">
             <TitleGrid title="Stok Menipis" sidetitle="Lihat Semua" 
             childer={
                 stokmenipis.map((item) => (
