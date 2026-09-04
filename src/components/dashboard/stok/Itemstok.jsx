@@ -1,13 +1,13 @@
-import { Mouse } from "lucide-react"
+
 
 const Itemstok = ({ item }) => {
-    const { nama, kategori, lokasi, stok, minimum, icon, } = item
+    const { nama, kategori, lokasi, stok, minimum, icon:Icon, } = item
 
     return (
         <div className="flex justify-between px-4 h-14 mb-4 border-b-2 border-slate-200 ">
             <div className="flex items-center ">
 
-                <Mouse className="p-2 rounded-xl bg-[#edeff4] mr-6" size={45} />
+                <Icon className="p-2 rounded-xl bg-[#edeff4] mr-6" size={45}/>
                 <div>
                     <h3 className="font-semibold">{nama}</h3>
                     <p></p>

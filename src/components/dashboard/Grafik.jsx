@@ -2,7 +2,7 @@ import LineGrafik from "./grafik/Linegrafik"
 
 const Grafik = () => {
     return (
-        <div className="p-4 bg-white m-6 shadow w-2xl rounded-2xl h-vh">
+        <div className="p-4 bg-white m shadow w-3xl rounded-2xl h-vh">
             <div className="flex justify-between items-center text-lg font-bold">
                 <h1>Grafik Barang Masuk & Keluar</h1>
                 <select className="border-amber-100 rounded p-1 font-semibold">

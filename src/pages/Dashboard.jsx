@@ -15,20 +15,20 @@ const Dashboard = () => {
 
     return (
         <>
-            <div className='flex h bg-[#f8f9fc]'>
+            <div className='flex  bg-[#f8f9fc]'>
                 {/* Side bar */}
                 {/* <Sidebar/> */}
                 {isSidebar && <Sidebar />}
                 {/* Main */}
-                <div className='w-full'>
-                    <Topbar navigasi={setIsSidebar} />
+                <div className='w-full '>
+                    <Topbar navigasi={setIsSidebar} /> 
                     <Card/>
-                    <div className='flex'>
-                        <div>
+                    <div className='grid grid-cols-2 m-4 gap-4 px border-4 border-red-500 '>
+                        <div className='border-4 border-blue-500'>
                         <Grafik />
                         <Transaksi/>
                     </div>
-                    <div>
+                    <div className='border-4 border-blue-500'>
                         <Stokmenipis/>
                         <Aksicepat/>
                     </div>

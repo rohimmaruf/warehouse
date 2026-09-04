@@ -3,7 +3,7 @@ import ItemCard from "./itemcard/ItemCard"
 
 const Card = () => {
     return (
-        <div className="flex ">
+        <div className="flex mt-20 ">
         <ItemCard tittle="Total Barang" nominal={128} description="Jenis Barang" icon={<Box className="text-white" size={30}/>} bgColor= "#7b99f2"  />
         <ItemCard tittle="Total Stok" nominal={1248} description="Total Semua Stok" icon={<Server className="text-white" size={30}/>} bgColor="#84d598"/>
         <ItemCard tittle="Barang Masuk" nominal={56} description="Hari Ini" icon={<MoveUp className="text-[#1d93de]" size={30}/>} bgColor="#d6f0fb" />

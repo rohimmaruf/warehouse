@@ -8,7 +8,7 @@ const Topbar = ({navigasi}) => {
     }
 
     return (
-        <div className="flex justify-between p-8 bg-white w-full h-4 items-center mb-6 shadow">
+        <div className="flex justify-between p-8 bg-white w-full h-4 items-center  shadow fixed" >
             <div className="flex">
                 <button className="cursor-pointer hover:bg-blue-50" onClick={buttonTop}>
                     <Menu size={30} />

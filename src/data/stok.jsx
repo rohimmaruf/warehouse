@@ -1,4 +1,7 @@
-const stokmenipis = [
+import { Droplet, Keyboard, Mouse, Package, PackageOpen } from "lucide-react"
+
+
+const stok = [
     {
         id: 1,
         nama: "Mouse Logitech",
@@ -6,7 +9,7 @@ const stokmenipis = [
         lokasi: "Rak A1",
         stok: 5,
         minimum: 10,
-        icon: "Mouse",
+        icon: Mouse,
     },
     {
         id: 2,
@@ -15,7 +18,7 @@ const stokmenipis = [
         lokasi: "Rak A2",
         stok: 3,
         minimum: 8,
-        icon: "Keyboard",
+        icon: Keyboard,
     },
     {
         id: 3,
@@ -24,7 +27,7 @@ const stokmenipis = [
         lokasi: "Rak B1",
         stok: 2,
         minimum: 10,
-        icon: "Packageopen",
+        icon: PackageOpen,
     },
     {
         id: 4,
@@ -33,8 +36,8 @@ const stokmenipis = [
         lokasi: "Rak B2",
         stok: 4,
         minimum: 6,
-        icon: "Droplet",
+        icon: Droplet,
     },
 ]
 
-export default stokmenipis
+export default stok

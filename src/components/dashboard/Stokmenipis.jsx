@@ -1,4 +1,5 @@
-import stokmenipis from "../../data/stokmenipis"
+import stok from "../../data/stok";
+import stokmenipis from "../../data/stok"
 import Itemstok from "./stok/Itemstok"
 import TitleGrid from "./Titlegrid"
 
@@ -11,7 +12,7 @@ const Stokmenipis = () => {
         <div className="flex ">
             <TitleGrid title="Stok Menipis" sidetitle="Lihat Semua" 
             childer={
-                stokmenipis.map((item) => (
+                stok.map((item) => (
                     <Itemstok
                         key={item.id}
                         item={item}
