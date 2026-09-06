@@ -8,6 +8,7 @@ import Grafik from '../components/dashboard/Grafik'
 import Transaksi from '../components/dashboard/Transaksi'
 import Stokmenipis from '../components/dashboard/Stokmenipis'
 import Aksicepat from '../components/dashboard/Aksicepat'
+import Grafik2 from '../components/dashboard/Grafik2'
 
 const Dashboard = () => {
 
@@ -21,21 +22,18 @@ const Dashboard = () => {
                 {isSidebar && <Sidebar />}
                 {/* Main */}
                 <div className='w-full '>
-                    <Topbar navigasi={setIsSidebar} /> 
-                    <Card/>
-                    <Aksicepat/>
-                    <div className='flex m-4 '>
-                        <div className=' mr-4'>
-                            {/* <p>https://vscode.dev/editor/liveshare/FAF1F4EEF7287B63E1782008755A20C9C7C8?vscode-lang=id-id</p> */}
-                        <Grafik  />
-                        <Stokmenipis/>
-                        <Transaksi/>
+                    <Topbar navigasi={setIsSidebar} title='Dashboard' />
+                    <div className='p-4 flex flex-col gap-4'>
+                        <Card />
+                        <Aksicepat />
+                        <div className=' grid grid-cols-2   '>
+                            <Grafik />
+                            <Grafik2 />
+                        </div>
+                        <Stokmenipis />
+                        <Transaksi />
                     </div>
-                    <div className=' '>
-                        
-                        
-                    </div>
-                    </div>
+
                 </div>
 
             </div>

@@ -1,6 +1,6 @@
 import { Bell, CircleUser, Menu } from "lucide-react"
 
-const Topbar = ({navigasi}) => {
+const Topbar = ({navigasi, title=""}) => {
 
     const buttonTop = () => {
         console.log("Berhasil");
@@ -13,7 +13,7 @@ const Topbar = ({navigasi}) => {
                 <button className="cursor-pointer hover:bg-blue-50" onClick={buttonTop}>
                     <Menu size={30} />
                 </button>
-                <h1 className="text-2xl px-4 font-black">Dashboard</h1>
+                <h1 className="text-2xl px-4 font-black">{title}</h1>
             </div>
             <div className="flex gap-4">
                 <Bell size={30} />
