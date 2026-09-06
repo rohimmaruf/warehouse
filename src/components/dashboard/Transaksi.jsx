@@ -8,7 +8,7 @@ const Transaksi = () => {
 
 
     return (
-        <div className="overflow-x-auto w-2xl">
+        <div className="w-full mt-4">
             <TitleGrid title="Transaksi Baru" sidetitle="Lihat Semua" childer={
                 <table className="w-full border-collapse text-xm">
                     <thead className="">

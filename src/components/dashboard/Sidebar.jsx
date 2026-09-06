@@ -5,7 +5,7 @@ const Sidebar = () => {
 
     return (
         <div>
-            <div className=' mb-1 fixed gap-2 flex bg-[#0c1e3b] text-white w-80 p-4
+            <div className='  sticky top-0 z-50 gap-2 flex bg-[#0c1e3b] text-white w-80 p-4
                 6 shadow'>
                     <img src="/logowarehouse.png" alt="Gudang App" className='w-15 h-9 object-contain' />
                 {/* <Warehouse size={34} /> */}
@@ -14,7 +14,7 @@ const Sidebar = () => {
             <div className=' gap-6 flex flex-col bg-[#0c1e3b] text-white h-full w-80 p-4
                 6 shadow'>
             
-            <div className='flex font-semibold gap-4 hover:bg-[#123b84] cursor-pointer p-2 rounded-md mt-20' >
+            <div className='flex font-semibold gap-4 hover:bg-[#123b84] cursor-pointer p-2 rounded-md ' >
                 <House />
                 <h3>Dahboard</h3>
             </div>

@@ -23,14 +23,16 @@ const Dashboard = () => {
                 <div className='w-full '>
                     <Topbar navigasi={setIsSidebar} /> 
                     <Card/>
-                    <div className='grid grid-cols-2 m-4 gap-4 px border-4 border-red-500 '>
-                        <div className='border-4 border-blue-500'>
-                        <Grafik />
+                    <Aksicepat/>
+                    <div className='flex m-4 '>
+                        <div className=' mr-4'>
+                            <p>https://vscode.dev/editor/liveshare/FAF1F4EEF7287B63E1782008755A20C9C7C8?vscode-lang=id-id</p>
+                        <Grafik  />
                         <Transaksi/>
                     </div>
-                    <div className='border-4 border-blue-500'>
+                    <div className=' '>
                         <Stokmenipis/>
-                        <Aksicepat/>
+                        
                     </div>
                     </div>
                 </div>
