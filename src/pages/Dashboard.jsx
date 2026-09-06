@@ -26,12 +26,13 @@ const Dashboard = () => {
                     <Aksicepat/>
                     <div className='flex m-4 '>
                         <div className=' mr-4'>
-                            <p>https://vscode.dev/editor/liveshare/FAF1F4EEF7287B63E1782008755A20C9C7C8?vscode-lang=id-id</p>
+                            {/* <p>https://vscode.dev/editor/liveshare/FAF1F4EEF7287B63E1782008755A20C9C7C8?vscode-lang=id-id</p> */}
                         <Grafik  />
+                        <Stokmenipis/>
                         <Transaksi/>
                     </div>
                     <div className=' '>
-                        <Stokmenipis/>
+                        
                         
                     </div>
                     </div>
