@@ -5,7 +5,7 @@ const Sidebar = () => {
 
     return (
         <div>
-            <div className='  sticky top-0 z-50 gap-2 flex bg-[#0c1e3b] text-white w-80 p-4
+            <div className='sticky top-0 z-50 gap-2 flex bg-[#0c1e3b] text-white w-80 p-4
                 6 shadow'>
                 <img src="/logowarehouse.png" alt="Gudang App" className='w-15 h-9 object-contain' />
                 {/* <Warehouse size={34} /> */}

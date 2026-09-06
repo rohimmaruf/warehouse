@@ -1,7 +1,7 @@
 import { useState } from "react"
-import ProductForm from "./Productform"
+// import ProductForm from "./Productform"
 
-const DataBarang = () => {
+const Databarang = () => {
 
     const [isFormOpen, setIsFormOpen] = useState (false);
 
@@ -75,11 +75,11 @@ const DataBarang = () => {
           </tbody>
         </table>
       </section>
-      {isFormOpen && <ProductForm/>}
+      {/* {isFormOpen && <ProductForm/>} */}
     </>
     )
 
     
 }
 
-export default DataBarang
+export default Databarang
