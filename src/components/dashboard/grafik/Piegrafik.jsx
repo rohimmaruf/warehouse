@@ -31,6 +31,7 @@ export const data = {
 
 export const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
         legend: {
             position: 'top',
@@ -40,10 +41,11 @@ export const options = {
 
 const Piegrafik = () => {
     return (
-        <Pie
+        <div className='flex w-full h-[450px] justify-center items-center gap-4 '><Pie
             data={data}
             options={options}
-        />
+        /></div>
+        
     );
 };
 

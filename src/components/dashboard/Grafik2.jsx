@@ -3,7 +3,7 @@ import Piegrafik from "./grafik/Piegrafik"
 
 const Grafik2 = () => {
     return (
-        <div className="p-4 bg-white  shadow  rounded-2xl ">
+        <div className="p-4 bg-white  shadow  rounded-2xl flex flex-col gap-10">
             <div className="flex justify-between items-center text-lg font-bold">
                 <h1>Grafik Barang Masuk & Keluar</h1>
                 <select className="border-amber-100 rounded p-1 font-semibold">
@@ -16,7 +16,7 @@ const Grafik2 = () => {
                 {/* <Bar /> */}
 
             </div>
-            <Piegrafik />
+            <Piegrafik  />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import { Album, Cuboid, Download, Home, House, Icon, Layers, MapIcon, RotateCcwClock, Settings, Upload, User, User2, UserRoundCog, Warehouse } from 'lucide-react'
 import Menu from './sidebar/Menu'
 import ItemMenu from './sidebar/Menu'
+import { Link, Links } from 'react-router-dom'
 const Sidebar = () => {
 
     return (
@@ -13,13 +14,17 @@ const Sidebar = () => {
             </div>
             <div className='gap-6 flex flex-col bg-[#0c1e3b] text-white h-full w-80 p-4
                 6 shadow'>
-
+                <Link to="/">
                 <div className='flex font-semibold gap-4 hover:bg-[#123b84] cursor-pointer p-2 rounded-md ' >
                     <House />
                     <h3>Dahboard</h3>
                 </div>
+                </Link>
                 <h2>Master Data</h2>
+                
+                <Link to="/databarang">
                 <ItemMenu title='Barang' icon={<Cuboid className='text-[#a0a9bb]' />} />
+                </Link>
                 <ItemMenu title='Kategori' icon={<Album className='text-[#a0a9bb]' />} />
                 <ItemMenu title='Lokasi' icon={<MapIcon className='text-[#a0a9bb]' />} />
                 <ItemMenu title='Suplier' icon={<User2 className='text-[#a0a9bb]' />} />

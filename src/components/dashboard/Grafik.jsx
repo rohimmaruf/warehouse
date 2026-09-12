@@ -3,7 +3,7 @@ import Piegrafik from "./grafik/Piegrafik"
 
 const Grafik = () => {
     return (
-        <div className="p-4 bg-white  shadow w-4xl rounded-2xl ">
+        <div className="p-4 bg-white  shadow w-full rounded-2xl ">
             <div className="flex justify-between items-center text-lg font-bold">
                 <h1>Grafik Barang Masuk & Keluar</h1>
                 <select className="border-amber-100 rounded p-1 font-semibold">
