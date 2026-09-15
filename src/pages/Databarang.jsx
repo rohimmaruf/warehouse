@@ -10,12 +10,7 @@ const Databarang = () => {
 
   return (
     <>
-        <div className='flex  bg-[#f8f9fc]'>
-          {isSidebar && <Sidebar/>}
-          <div>
-            <Topbar title='Data Barang'/>
-          </div>
-        </div>
+      <h1>Halamam Barang</h1>
     </>
   )
 

@@ -1,7 +1,7 @@
 
 import '../index.css'
 import Sidebar from '../components/dashboard/Sidebar'
-import Topbar from '../components/dashboard/Topbar'
+
 import { useState } from 'react'
 import Card from '../components/dashboard/Card'
 import Grafik from '../components/dashboard/Grafik'
@@ -19,10 +19,10 @@ const Dashboard = () => {
             <div className='flex  bg-[#f8f9fc]'>
                 {/* Side bar */}
                 {/* <Sidebar/> */}
-                {isSidebar && <Sidebar />}
+                {/* {isSidebar && <Sidebar />} */}
                 {/* Main */}
                 <div className='w-full '>
-                    <Topbar navigasi={setIsSidebar} title='Dashboard' />
+                    {/* <Topbar navigasi={setIsSidebar} title='Dashboard' /> */}
                     <p>https://prod.liveshare.vsengsaas.visualstudio.com/join?1B8B3FA7C7C2241CA24DA1D2F9E21D7BA1B6</p>
                     <div className='p-4 flex flex-col gap-4'>
                         <Card />
