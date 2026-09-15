@@ -9,6 +9,7 @@ import Transaksi from '../components/dashboard/Transaksi'
 import Stokmenipis from '../components/dashboard/Stokmenipis'
 import Aksicepat from '../components/dashboard/Aksicepat'
 import Grafik2 from '../components/dashboard/Grafik2'
+import Button from '../components/dashboard/Button'
 
 const Dashboard = () => {
 
@@ -37,6 +38,9 @@ const Dashboard = () => {
                         </div>
 
                         <Transaksi />
+                        <Button variant='primary' title='primary'/>
+                        <Button variant='secondary' title='secondary'/>
+                        
                     </div>
 
                 </div>
