@@ -1,12 +1,15 @@
 import { Pen, PenBox, PenBoxIcon, Trash, Trash2 } from "lucide-react"
 import Titlebox from "../components/general/Titlebox"
 import kategori from "../data/kategori"
+import Tambahkategori from "../components/kategori/Tambahkategori"
+import { useState } from "react"
 
 const Kategori = () => {
     // console.log(kategori);
+    const [isTambahbarang, setIsTambahbarang] = useState(false)
     
     return (
-        <div className="bg-[#f8f9fc] gap-5 flex-col ">
+        <div className="bg-[#f8f9fc] gap-5 flex-col flex">
             <Titlebox />
             <table className="w-full table-fixed">
                 <thead >
@@ -36,6 +39,7 @@ const Kategori = () => {
                     
                 </tbody>
             </table>
+            {isTambahbarang && <Tambahkategori/>}
         </div>
     )
 }
