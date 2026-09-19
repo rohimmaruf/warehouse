@@ -12,4 +12,3 @@ const Button = ({isOpen=""}) => {
     )
 }
 
-export default Button
