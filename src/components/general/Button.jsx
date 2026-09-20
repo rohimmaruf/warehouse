@@ -1,14 +1,11 @@
-import { Plus } from "lucide-react"
+import { Plus, PlusCircle, PlusCircleIcon } from "lucide-react"
+import { Children } from "react"
 
-const Button = ({isOpen=""}) => {
-
-    const open = (e) => {
-        console.log("INi tombol tambah");
-        
-    }
-
+const Button = ({onClick = () => {}, title='', icon = {}}) => {   
+    
     return (
-        <button className="text-white font-bold bg-[#145ad4] rounded-xl px-4 flex items-center cursor-pointer" onClick={open}><span><Plus/></span>Tambah Kategori</button>
+        <button className="text-white font-bold bg-[#145ad4] rounded-xl h-10 px-4 flex items-center cursor-pointer" onClick={onClick}><span>{icon}</span>{title}</button>
     )
 }
 
+export default Button
