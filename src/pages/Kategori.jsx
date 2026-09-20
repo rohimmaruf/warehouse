@@ -27,8 +27,7 @@ const Kategori = () => {
                     </tr>
                 </thead>
                 <tbody className="font-medium">
-                    {kategori.map((e) => {
-                        const { id, kode, nama, jumlahBarang, status } = e
+                    {kategori.map(({id, kode, nama, jumlahBarang, status}) => {
 
                         return (
                             <tr key={id} className="px-4 py-3 text-center text-slate-500">
@@ -43,7 +42,11 @@ const Kategori = () => {
 
                 </tbody>
             </table>
-            {isTambahbarang && <Formkategori/>}
+            {isTambahbarang && <Formkategori onCancel={() => {
+                setIsTambahbarang(false)
+                console.log("TUtup");
+            }}
+            />}
         </div>
     )
 }
