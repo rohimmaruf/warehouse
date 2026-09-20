@@ -1,12 +1,21 @@
 import { Pen, PenBox, PenBoxIcon, Trash, Trash2 } from "lucide-react"
 import Titlebox from "../components/general/Titlebox"
-import kategori from "../data/kategori"
+// import kategori from "../data/kategori"
 import { useState } from "react"
 import Formkategori from "../components/kategori/Formkategori"
 
 const Kategori = () => {
     // console.log(kategori);
     const [isTambahbarang, setIsTambahbarang] = useState(false)
+
+    const [kategori, setKategori] = useState([])
+
+    const onAddSimpan = (data) => {
+        console.log("Kategerori",data);
+        // Sama dengan saat tambah file Cuman Beda kurung siku
+        setKategori((prev) => ([...prev,data]))
+    
+    }
 
     return (
         <div className="bg-[#f8f9fc] gap-5 flex-col flex">
@@ -42,10 +51,12 @@ const Kategori = () => {
 
                 </tbody>
             </table>
-            {isTambahbarang && <Formkategori onCancel={() => {
+            {isTambahbarang && <Formkategori 
+            onCancel={() => {
                 setIsTambahbarang(false)
                 console.log("TUtup");
             }}
+            onSimpan={onAddSimpan}
             />}
         </div>
     )

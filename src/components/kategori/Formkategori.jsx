@@ -3,7 +3,7 @@ import Button from "../general/Button"
 import TitleFormKategori from "./TitleFormKategori"
 import { useState } from "react"
 
-const Formkategori = ({ onCancel = () => { }, }) => {
+const Formkategori = ({ onCancel = () => { },onSimpan = () => {} }) => {
 
     const [kategori, SetKategoti] = useState([
 
@@ -20,13 +20,19 @@ const Formkategori = ({ onCancel = () => { }, }) => {
     // const [kode, SetKode] = useState({})
     const inputChange = (e) => {
        const {name, value} = e.target
-       console.log(name, value);
+    //    console.log(name, value);
        SetListkategori((reff) => ({...reff, [name] : value}))
-       console.log(listkategori);
+    //    console.log(listkategori);
        
        
     }
 
+    const onSubmit = () => {
+        console.log(listkategori);
+        onSimpan(listkategori)
+        onCancel()
+        
+    }
     // const inputKode = (e) => {
     //     // console.log(e.target.value);
     //     // console.log(e.target.name);
@@ -93,7 +99,7 @@ const Formkategori = ({ onCancel = () => { }, }) => {
                 </select>
                 <div className="flex gap-2">
                     <Button title="Batal" varian="secondary" onClick={onCancel} />
-                    <Button title="Simpan" icon={<Save />} />
+                    <Button title="Simpan" onClick={onSubmit} icon={<Save />} />
                 </div>
             </div>
 
