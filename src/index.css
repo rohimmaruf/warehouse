@@ -1,5 +1,41 @@
 @import "tailwindcss";
 
-body{
-    /* background-color: #0F172A; */
+@theme {
+    --color-warehouse-primary: #0E9488;
+    --color-warehouse-primary-dark: #112d2e;
+    --color-warehouse-primary-soft: #DDF6F1;
+
+    --color-warehouse-sidebar: #182B2F;
+    --color-warehouse-sidebar-dark: #102326;
+    --color-warehouse-sidebar-hover: #243E41;
+    --color-warehouse-sidebar-active: #2F5552;
+
+    --color-warehouse-bg: #F7F7F8;
+    --color-warehouse-surface: #FFFFFF;
+
+    --color-warehouse-text: #17262A;
+    --color-warehouse-secondary: #3F4E51;
+    --color-warehouse-muted: #667477;
+    --color-warehouse-placeholder: #94A1A3;
+
+    --color-warehouse-border: #E8E8E6;
+    --color-warehouse-border-input: #DDE2E1;
+
+    --color-warehouse-success: #22B573;
+    --color-warehouse-success-dark: #168653;
+    --color-warehouse-success-soft: #E4F7EC;
+
+    --color-warehouse-warning: #F59E0B;
+    --color-warehouse-warning-dark: #D97706;
+    --color-warehouse-warning-soft: #FFF3D8;
+
+    --color-warehouse-danger: #F04455;
+    --color-warehouse-danger-dark: #DC3545;
+    --color-warehouse-danger-soft: #FFE7EA;
+
+    --color-warehouse-info: #4F8FF7;
+    --color-warehouse-info-soft: #E6F0FF;
+
+    --color-warehouse-gold: #D9A441;
+    --color-warehouse-cream: #F5EFE2;
 }
