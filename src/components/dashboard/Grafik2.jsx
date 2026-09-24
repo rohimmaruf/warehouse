@@ -1,4 +1,4 @@
-import LineGrafik from "./grafik/Linegrafik"
+// import LineGrafik from "./grafik/Linegrafik"
 import Piegrafik from "./grafik/Piegrafik"
 
 const Grafik2 = () => {

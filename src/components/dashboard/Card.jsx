@@ -4,11 +4,11 @@ import ItemCard from "./itemcard/ItemCard"
 const Card = () => {
     return (
         <div className="flex gap-4 ">
-            <ItemCard tittle="Total Prouduct" nominal={128} description="Jenis Barang" icon={<Box className="text-white" size={30} />} bgColor="#7b99f2" />
-            <ItemCard tittle="Total Stock" nominal={1248} description="Total Semua Stok" icon={<Server className="text-white" size={30} />} bgColor="#84d598" />
-            <ItemCard tittle="Stok In" nominal={56} description="Hari Ini" icon={<MoveUp className="text-[#1d93de]" size={30} />} bgColor="#d6f0fb" />
-            <ItemCard tittle="Stock Oout" nominal={32} description="Hari Ini" icon={<MoveDown className="text-[#f96a33]" size={30} />} bgColor="#fdeedd" />
-            <ItemCard tittle="Low Stock" nominal={8} description="Barang" icon={<TriangleAlert className="text-[#f14e4a]" size={30} />} bgColor="#fde2e4" />
+            <ItemCard tittle="Total Prouduct" nominal={128} description="12%" icon={<Box className="text-white" size={50} />} bgColor="#7b99f2" />
+            <ItemCard tittle="Total Stock" nominal={1248} description="8.3%" icon={<Server className="text-white" size={50} />} bgColor="#84d598" />
+            <ItemCard tittle="Stok In" nominal={56} description="25%" icon={<Download className="text-text-green" size={50} />} bgColor="#daf7e7" />
+            <ItemCard tittle="Stock Oout" nominal={32} description="5%" icon={<Upload className="text-[#f96a33]" size={50} />} bgColor="#fdeedd" />
+            {/* <ItemCard tittle="Low Stock" nominal={8} description="10%" icon={<TriangleAlert className="text-[#f14e4a]" size={50} />} bgColor="#fde2e4" /> */}
         </div>
     )
 }

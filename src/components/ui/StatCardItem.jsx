@@ -1,6 +1,6 @@
 import { ArrowUp, Box, EllipsisVertical, Square } from "lucide-react"
 
-const ItemCard = ({ tittle = "", nominal = Number, description = "", icon = null, bgColor }) => {
+const StatCardItem = ({ tittle = "", nominal = Number, description = "", icon = null, bgColor }) => {
 
 
 
@@ -26,4 +26,4 @@ const ItemCard = ({ tittle = "", nominal = Number, description = "", icon = null
     )
 }
 
-export default ItemCard
+export default StatCardItem
