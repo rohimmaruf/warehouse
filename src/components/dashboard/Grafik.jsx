@@ -1,3 +1,4 @@
+import { ChartAreaIcon, ChartBarDecreasing } from "lucide-react"
 import LineGrafik from "./grafik/Linegrafik"
 import Piegrafik from "./grafik/Piegrafik"
 
@@ -5,7 +6,11 @@ const Grafik = () => {
     return (
         <div className="p-4 bg-white  shadow w-full rounded-2xl ">
             <div className="flex justify-between items-center text-lg font-bold">
-                <h1>Grafik Barang Masuk & Keluar</h1>
+                <ChartAreaIcon/>
+                <div>
+                    <h1>Stock Activity</h1>
+                    <p>Incoming and Outgoing stock over the last 30 days</p>
+                </div>
                 <select className="border-amber-100 rounded p-1 font-semibold">
                     <option value="">7 Hari terakhir</option>
                     <option value="">30 Hari terakhir</option>

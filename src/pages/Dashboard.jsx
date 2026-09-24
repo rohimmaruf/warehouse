@@ -24,18 +24,19 @@ const Dashboard = () => {
                 {/* Main */}
                 <div className='w-full '>
                     {/* <Topbar navigasi={setIsSidebar} title='Dashboard' /> */}
-                    <p>https://prod.liveshare.vsengsaas.visualstudio.com/join?1B8B3FA7C7C2241CA24DA1D2F9E21D7BA1B6</p>
+                    {/* <p>https://prod.liveshare.vsengsaas.visualstudio.com/join?1B8B3FA7C7C2241CA24DA1D2F9E21D7BA1B6</p> */}
                     <div className='p-4 flex flex-col gap-4'>
                         <Card />
                         <div className='grid grid-cols-2 gap-4'>
-                            <Aksicepat />
+                             <Grafik />
+                            {/* <Aksicepat /> */}
                             <Stokmenipis />
                         </div>
 
-                        <div className=' grid grid-cols-2 gap-4  '>
-                            <Grafik />
-                            <Grafik2 />
-                        </div>
+                        {/* <div className=' grid grid-cols-2 gap-4  '> */}
+                           
+                            {/* <Grafik2 /> */}
+                        {/* </div> */}
 
                         <Transaksi />
                         <Button title='Primary' varian='primary'/>

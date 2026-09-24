@@ -10,8 +10,8 @@ const ItemMenu = ({ title = "", icon, to }) => {
             className={({ isActive }) =>
                 `flex items-center gap-4 rounded-md px-6 py-2 font-semibold
                 ${isActive
-                    ? "bg-[#123b84] text-white"
-                    : "text-white hover:bg-[#123b84]"
+                    ? "bg-warehouse-sidebar-active text-white"
+                    : "text-white hover:bg-warehouse-sidebar-hover"
                 }
             `
             }
