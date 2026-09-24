@@ -8,8 +8,8 @@ const Product = () => {
         <>
             <ProductHeader />
             <ProductStats/>
-            <ProductFilter/>
-            <ProductTable/>
+            {/* <ProductFilter/> */}
+            {/* <ProductTable/> */}
         </>
     )
 }

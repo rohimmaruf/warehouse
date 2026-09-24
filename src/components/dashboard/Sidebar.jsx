@@ -20,8 +20,8 @@ const Sidebar = () => {
 
 
                 <h2>Master Data</h2>
-                <ItemMenu title='Products' icon={<Cuboid className='text-[#a0a9bb] ' />} to="/databarang" />
-                <ItemMenu title='Categories' icon={<Album className='text-[#a0a9bb]' />} to="/kategori" />
+                <ItemMenu title='Products' icon={<Cuboid className='text-[#a0a9bb] ' />} to="/product" />
+                <ItemMenu title='Categories' icon={<Album className='text-[#a0a9bb]' />} to="/Categori" />
                 <ItemMenu title='Locations' icon={<MapIcon className='text-[#a0a9bb]' />} to="/lokasi" />
                 <ItemMenu title='Suppliers' icon={<User2 className='text-[#a0a9bb]' />} to="/suplier" />
 
