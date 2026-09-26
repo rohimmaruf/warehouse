@@ -1,7 +1,9 @@
+import Filter from "../ui/Filter"
+
 const ProductFilter = () => {
     return(
         <div className="border-2">
-            Product Filter
+            <Filter/>
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import PageTitle from "../ui/PageTitle"
 
-const ProductHeader = () => {
+const ProductHeader = ({onAddProduct}) => {
     return(
         <div>
-            <PageTitle/>
+            <PageTitle onAdd={onAddProduct}/>
         </div>
     )
 }
