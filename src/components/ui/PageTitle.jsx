@@ -1,12 +1,12 @@
 import { Plus } from "lucide-react"
 import Button from "./Button"
 
-const PageTitle = ({onAdd }) => {
+const PageTitle = ({onAdd, title="", subtitle="" }) => {
     return (
-        <div className="flex justify-between items-center border-2">
+        <div className="flex justify-between items-center ">
             <div>
-                <h1 className="text-2xl font-bold">Judul</h1>
-                <p className="text-x text-text-secondary ">Kelola data produk, lihat stok, dan atur informasi produk di gudang</p>
+                <h1 className="text-2xl font-bold">{title}</h1>
+                <p className="text-x text-text-secondary ">{subtitle}</p>
             </div>
             <Button title="Add Product"  icon={<Plus/>} onClick={onAdd}/>
         </div>

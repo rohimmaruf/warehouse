@@ -5,11 +5,8 @@ const StatCardItem = ({ tittle = "", nominal = Number, description = "", icon = 
 
 
     return (
-        <div className="bg-white w-[25%] justify-start  flex shadow rounded-2xl items-start gap-4 p-4">
-            <div className=" justify-center  flex  items-center gap-4 ">
-                <div style={{ backgroundColor: bgColor }} className=" p-3 rounded-xl">
-                    {icon}
-                </div>
+        <div className="bg-white w-full justify-between  flex shadow rounded-2xl items-start gap-4 p-4">
+            <div className="w-full justify-between  flex  items-center gap-4 ">
                 <div className="">
                     <h2 className="text-lg font-bold ">{tittle}</h2>
                     <h1 className="text-3xl font-extrabold">{nominal}</h1>
@@ -18,10 +15,13 @@ const StatCardItem = ({ tittle = "", nominal = Number, description = "", icon = 
                         <p className="font-medium text-x text-text-secondary">from last month</p>
                     </div>
                 </div>
+                <div style={{ backgroundColor: bgColor }} className=" p-3 rounded-xl">
+                    {icon}
+                </div>
             </div>
-            <div className="flex justify-start items-start text-text-secondary">
+            {/* <div className="flex justify-start items-start text-text-secondary">
                 <EllipsisVertical />
-            </div>
+            </div> */}
         </div>
     )
 }
