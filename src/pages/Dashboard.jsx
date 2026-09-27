@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <div className='flex  bg-[#f8f9fc]'>
+            <div className='flex  bg-warehouse-bg'>
                 {/* Side bar */}
                 {/* <Sidebar/> */}
                 {/* {isSidebar && <Sidebar />} */}
@@ -42,8 +42,8 @@ const Dashboard = () => {
                         {/* </div> */}
 
                         <Transaksi />
-                        <Button title='Primary' varian='primary'/>
-                        <Button title='Secondary' varian='secondary'/>
+                        {/* <Button title='Primary' varian='primary'/>
+                        <Button title='Secondary' varian='secondary'/> */}
                     </div>
 
                 </div>

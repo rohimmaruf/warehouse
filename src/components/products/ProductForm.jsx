@@ -1,9 +1,9 @@
-import { Save } from "lucide-react"
+import { Box, Save } from "lucide-react"
 import Button from "../ui/Button"
 import TitleForm from "../ui/TitleForm"
 import { useState } from "react"
 
-const ProductForm = ({ onCancel = () => { }, onAddProduct=()=>{}  }) => {
+const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
 
     const [detailProduct, setDetailProduct] = useState({})
@@ -20,31 +20,38 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct=()=>{}  }) => {
 
     }
 
-    const onSaveProduct = () => { 
+    const onSaveProduct = () => {
         const newProdact = {
             ...detailProduct,
             id: Date.now()
         }
-       console.log(newProdact);
+        console.log(newProdact);
         onAddProduct(newProdact)
         onCancel()
-        
-        
+
+
     }
     return (
         <div className="  fixed bg-black/30 inset-0 z-50  justify-center items-center flex flex-col">
             <div className="bg-white shadow-2xl  p-4 gap-4 items-start flex flex-col w-fit h rounded-2xl">
                 {/* Title Form */}
-                <h1 className="font-bold text-2xl">Add Product</h1>
-                <p className="text-gray-500 border-b-2 border-gray-200 w-full" >Add new Product on system</p>
+                <div className="w-full flex  items-center gap-4  border-gray-200">
+                    <Box className="bg-amber-500  p-2 rounded-xl" size={60}/>
+                    <div>
+                        <h1 className="font-bold text-2xl">Add Product</h1>
+                        <p className="text-gray-500  w-full font-semibold" >Add new Product on system</p>
+                    </div>
+                    
+                </div>
                 <p className="text-text-green font-bold">Informasi Product</p>
                 {/* Form */}
                 <div className="flex gap-4">
+
                     <div>
                         <TitleForm title="Kode Product" />
                         {/* Bikin Handler */}
                         <input
-                            className="border-gray-300 border-2 w-full p-2 ro"
+                            className="border-gray-300 border-2 w-full p-2 rounded-xl"
                             type="text"
                             placeholder="Contoh: BRG-001"
                             name="code"

@@ -10,6 +10,8 @@ const stok = [
         stok: 5,
         minimum: 10,
         icon: Mouse,
+        varian : "[#C49A45]"
+
     },
     {
         id: 2,
@@ -19,6 +21,7 @@ const stok = [
         stok: 3,
         minimum: 8,
         icon: Keyboard,
+        varian : "[#363199]"
     },
     {
         id: 3,
@@ -28,6 +31,7 @@ const stok = [
         stok: 2,
         minimum: 10,
         icon: PackageOpen,
+        varian : "[#E8E085]"
     },
     {
         id: 4,
@@ -37,6 +41,7 @@ const stok = [
         stok: 4,
         minimum: 6,
         icon: Droplet,
+        varian : "[#8ACFF8]"
     },
 ]
 

@@ -3,12 +3,14 @@ import Titlebox from "../components/general/Titlebox"
 // import kategori from "../data/kategori"
 import { useState } from "react"
 import Formkategori from "../components/kategori/Formkategori"
+import kategori from "../data/kategori"
+import kategori from "../data/kategori"
 
 const Kategori = () => {
     // console.log(kategori);
     const [isTambahbarang, setIsTambahbarang] = useState(false)
 
-    const [kategori, setKategori] = useState([])
+    const [kategori, setKategori] = useState(kategori)
 
     const onAddSimpan = (data) => {
         console.log("Kategerori",data);

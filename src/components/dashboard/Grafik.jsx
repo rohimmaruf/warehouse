@@ -1,22 +1,22 @@
-import { ChartAreaIcon, ChartBarDecreasing } from "lucide-react"
+import { ChartAreaIcon, ChartBar, ChartBarDecreasing, ChartColumn } from "lucide-react"
 import LineGrafik from "./grafik/Linegrafik"
 import Piegrafik from "./grafik/Piegrafik"
+import TitleGrid from "./Titlegrid"
 
 const Grafik = () => {
   return (
-    <div className="h-[360px] rounded-2xl border border-warehouse-border bg-warehouse-surface p-6">
+    <div className=" rounded-2xl  border-warehouse-border bg-white shadow p-6">
 
       <div className="mb-5">
-        <h2 className="text-base font-bold text-warehouse-text">
-          Stock Activity
-        </h2>
-
-        <p className="mt-1 text-xs text-warehouse-muted">
-          Incoming and outgoing stock this week
-        </p>
+        <TitleGrid 
+        title="Stock Activity" 
+        sidetitle={"View All"} 
+        subtitle="Incoming Outgoing stock this week"
+        icon={<ChartColumn className="text-green-600" size={35}/>}
+        />
       </div>
 
-      <div className="h-[250px]">
+      <div className="h-[80%]">
         <LineGrafik />
       </div>
 

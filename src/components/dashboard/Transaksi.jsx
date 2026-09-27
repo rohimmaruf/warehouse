@@ -1,4 +1,5 @@
 
+import { File, FileText } from "lucide-react";
 import transaksi from "../../data/transaksi";
 import TitleGrid from "./Titlegrid"
 
@@ -8,8 +9,12 @@ const Transaksi = () => {
 
 
     return (
-        <div className="w-full">
-            <TitleGrid title="Transaksi Baru" sidetitle="Lihat Semua" childer={
+        <div className="w-full p-4 bg-warehouse-surface shadow rounded-2xl">
+            <TitleGrid 
+            icon={<FileText size={35} className="text-blue-400"/>}
+            title="Transaksi Baru" 
+            subtitle="Latest incoming and outgoing stock activies" 
+            sidetitle="View All" childer={
                 <table className="w-full border-collapse text-xm">
                     <thead className="">
                         <tr className="border-b border-slate-200">

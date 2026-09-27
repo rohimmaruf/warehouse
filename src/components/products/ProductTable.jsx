@@ -1,12 +1,26 @@
 import { PenBoxIcon, Trash2 } from "lucide-react"
+import { useState } from "react";
 
 const ProductTable = ({ product }) => {
+
+    const [listProduct, setListProduct] = useState(product)
+
+    const onEdit = (id) => {
+        return console.log(id);
+    }
+
+    const onDelete = (id) => {
+
+        return setListProduct((prev) => prev.filter((e) => e.id !== id))
+
+    }
+
     return (
-        <div className="w-full overflow-x-auto border-2">
+        <div className="w-full overflow-x-auto bg-warehouse-surface shadow rounded-xl p-4">
 
             <table className="w-full">
 
-                <thead className="border-b-2">
+                <thead className="border-b-2 border-gray-300">
                     <tr>
                         <th className="px-4 py-3 text-left">Code</th>
                         <th className="px-4 py-3 text-left">Product Name</th>
@@ -21,7 +35,16 @@ const ProductTable = ({ product }) => {
                 </thead>
 
                 <tbody>
-                    {product.map(
+                    {listProduct.length === 0 ? (
+                        <tr>
+                            <td
+                                colSpan="9"
+                                className="px-4 py-10 text-center text-gray-500"
+                            >
+                                Data Kosong
+                            </td>
+                        </tr>
+                    ) : listProduct.map(
                         ({
                             id,
                             code,
@@ -34,25 +57,34 @@ const ProductTable = ({ product }) => {
                             status
                         }) => {
                             return (
+
                                 <tr
                                     key={id}
-                                    className="border-b"
+                                    className="border-b border-gray-300 text-text-secondary "
                                 >
                                     <td className="px-4 py-3">{code}</td>
-                                    <td className="px-4 py-3">{name}</td>
+                                    <td className="px-4 py-3 text-black font-semibold">{name}</td>
                                     <td className="px-4 py-3">{category}</td>
                                     <td className="px-4 py-3">{location}</td>
                                     <td className="px-4 py-3">{unit}</td>
-                                    <td className="px-4 py-3">{stock}</td>
+                                    <td
+                                        className={`px-4 py-3 font-bold  ${stock < 10 ? "text-red-500" : "text-green-500"}`}
+                                    >{stock}</td>
                                     <td className="px-4 py-3">{minimumStock}</td>
                                     <td className="px-4 py-3">{status}</td>
-                                    <td className="px-4 py-3  justify-center flex">
-                                        <PenBoxIcon className="text-[#1451d7]" /><span>
-                                        <Trash2 className="text-[#d22c30]" /></span></td>
+                                    <td className="px-4 py-3  justify-center flex items-center">
+                                        <PenBoxIcon
+                                            className="text-[#1451d7] 
+                                        cursor-pointer"
+                                            onClick={() => (onEdit(id))} /><span>
+                                            <Trash2
+                                                className="text-[#d22c30] cursor-pointer"
+                                                onClick={() => (onDelete(id))} /></span></td>
                                 </tr>
                             )
                         }
-                    )}
+                    )
+                    }
                 </tbody>
 
             </table>

@@ -11,8 +11,8 @@ const StatCardItem = ({ tittle = "", nominal = Number, description = "", icon = 
                     <h2 className="text-lg font-bold ">{tittle}</h2>
                     <h1 className="text-3xl font-extrabold">{nominal}</h1>
                     <div className="flex gap-2">
-                        <p className="text-s font-bold text-text-green flex">{description}</p>
-                        <p className="font-medium text-x text-text-secondary">from last month</p>
+                        {/* <p className="text-s font-bold text-text-green flex">{description}</p> */}
+                        <p className="font-medium text-x text-text-secondary">{description}</p>
                     </div>
                 </div>
                 <div style={{ backgroundColor: bgColor }} className=" p-3 rounded-xl">

@@ -2,7 +2,7 @@ import Filter from "../ui/Filter"
 
 const ProductFilter = () => {
     return(
-        <div className="border-2">
+        <div className="bg-warehouse-surface shadow rounded-xl ">
             <Filter/>
         </div>
     )

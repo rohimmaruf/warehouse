@@ -1,13 +1,13 @@
 
 
 const Itemstok = ({ item }) => {
-    const { nama, kategori, lokasi, stok, minimum, icon:Icon, } = item
+    const { nama, kategori, lokasi, stok, minimum, icon:Icon, varian } = item
 
     return (
         <div className="flex justify-between px-4 h-14 mb-4 border-b-2 border-slate-200 ">
             <div className="flex items-center ">
 
-                <Icon className="p-2 rounded-xl bg-[#edeff4] mr-6" size={45}/>
+                <Icon className={`p-2 rounded-xl bg-green-200 mr-6`} size={45}/>
                 <div>
                     <h3 className="font-semibold">{nama}</h3>
                     <p></p>

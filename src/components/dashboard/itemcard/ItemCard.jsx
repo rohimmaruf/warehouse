@@ -5,8 +5,8 @@ const ItemCard = ({ tittle = "", nominal = Number, description = "", icon = null
 
 
     return (
-        <div className="bg-white w-[25%] justify-start  flex shadow rounded-2xl items-start gap-4 p-4">
-            <div className=" justify-center  flex  items-center gap-4 ">
+        <div className="bg-white w-full justify-between  flex shadow rounded-2xl items-start gap-4 p-4 ">
+            <div className="flex  items-center gap-4 ">
                 <div style={{ backgroundColor: bgColor }} className=" p-3 rounded-xl">
                     {icon}
                 </div>
@@ -19,7 +19,7 @@ const ItemCard = ({ tittle = "", nominal = Number, description = "", icon = null
                     </div>
                 </div>
             </div>
-            <div className="flex justify-start items-start text-text-secondary">
+            <div className="flex justify-start items-start text-text-secondary ">
                 <EllipsisVertical />
             </div>
         </div>
