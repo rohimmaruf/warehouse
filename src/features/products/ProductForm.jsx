@@ -1,6 +1,6 @@
 import { Box, Save } from "lucide-react"
-import Button from "../ui/Button"
-import TitleForm from "../ui/TitleForm"
+import Button from "@/components/Button"
+import TitleForm from "@/components/TitleForm"
 import { useState } from "react"
 
 const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {

@@ -1,6 +1,6 @@
 import { Box, CircleX, ClosedCaption, Download, Server, TriangleAlert, Upload } from "lucide-react"
-import ItemCard from "../dashboard/itemcard/ItemCard"
-import StatCardItem from "./StatCardItem"
+// import ItemCard from "../dashboard/itemcard/ItemCard"
+import StatCardItem from "@/components/StatCardItem"
 
 const StatCard = () => {
     return (

@@ -1,4 +1,4 @@
-import StatCard from "../ui/StatCard"
+import StatCard from "@/components/StatCard"
 
 const ProductStats = () => {
     return (

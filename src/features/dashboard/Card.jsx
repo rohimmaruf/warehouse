@@ -1,5 +1,5 @@
 import { Box, Download, MoveDown, MoveUp, Server, Square, TriangleAlert, Upload } from "lucide-react"
-import ItemCard from "./itemcard/ItemCard"
+import ItemCard from "../../features/dashboard/itemcard/ItemCard"
 
 const Card = () => {
     return (

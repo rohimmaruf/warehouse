@@ -1,8 +1,8 @@
 import { FileWarningIcon, Triangle, TriangleAlert } from "lucide-react";
-import stok from "../../data/stok";
-import stokmenipis from "../../data/stok"
-import Itemstok from "./stok/Itemstok"
-import TitleGrid from "./Titlegrid"
+import stok from "@/data/stok";
+// import stokmenipis from "@/data/stok"
+import Itemstok from "@/features/dashboard/stok/Itemstok"
+import TitleGrid from "@/features/dashboard/Titlegrid"
 
 const Stokmenipis = () => {
 

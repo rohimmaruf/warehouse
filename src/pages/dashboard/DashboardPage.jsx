@@ -1,17 +1,17 @@
 
-import '../index.css'
-import Sidebar from '../components/dashboard/Sidebar'
+import '@/index.css'
+// import Sidebar from '@/components/dashboard/Sidebar'
 
 import { useState } from 'react'
-import Card from '../components/dashboard/Card'
-import Grafik from '../components/dashboard/Grafik'
-import Transaksi from '../components/dashboard/Transaksi'
-import Stokmenipis from '../components/dashboard/Stokmenipis'
-import Aksicepat from '../components/dashboard/Aksicepat'
-import Grafik2 from '../components/dashboard/Grafik2'
-import Button from '../components/dashboard/Button'
+import Card from '@/features/dashboard/Card'
+import Grafik from '@/features/dashboard/Grafik'
+import Transaksi from '@/features/dashboard/Transaksi'
+import Stokmenipis from '@/features/dashboard/Stokmenipis'
+// import Aksicepat from '@/components/dashboard/Aksicepat'
+// import Grafik2 from '@/components/dashboard/Grafik2'
+// import Button from '@/components/dashboard/Button'
 
-const Dashboard = () => {
+const DashboardPage = () => {
 
     const [isSidebar, setIsSidebar] = useState(true)
 
@@ -54,4 +54,4 @@ const Dashboard = () => {
 
 }
 
-export default Dashboard
+export default DashboardPage

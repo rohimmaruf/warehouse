@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUp, ChartColumnBig, ClipboardCheck, Cuboid, FileClock } from "lucide-react"
-import Itemaksicepat from "./itemaksi/Itemaksicepat"
-import TitleGrid from "./Titlegrid"
+import Itemaksicepat from "@/itemaksi/Itemaksicepat"
+import TitleGrid from "@/Titlegrid"
 import { Link } from "react-router-dom"
 
 const Aksicepat = () => {

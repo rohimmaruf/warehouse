@@ -1,9 +1,9 @@
 import { Outlet, useLocation } from "react-router-dom"
-import Sidebar from "../components/dashboard/Sidebar"
-import Topbar from "../components/dashboard/Topbar"
+import Sidebar from "@/layouts/main/Sidebar"
+import Topbar from "@/layouts/main/Topbar"
 import { useState } from "react"
 
-const Layout = () => {
+const MainLayout = () => {
 
     const location = useLocation()
     const titles = {
@@ -30,4 +30,4 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default MainLayout

@@ -1,19 +1,18 @@
 import { Route, Routes } from 'react-router-dom'
-import './index.css'
-import Dashboard from './pages/Dashboard'
-// import Databarang from './pages/Databarang'
-import Layout from './layout/Layout'
-import Kategori from './pages/Kategori'
-import Product from './pages/Product'
+import '@/index.css'
+import Kategori from '@/pages/Kategori'
+import MainLayout from '@/layouts/main/MainLayout'
+import DashboardPage from '@/pages/dashboard/DashboardPage'
+import ProductPage from '@/pages/products/ProductPage'
 
 
 function App() {
 
   return (
     <Routes>
-      <Route element={<Layout/>}>
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/product' element={<Product />} />
+      <Route element={<MainLayout/>}>
+        <Route path='/' element={<DashboardPage />} />
+        <Route path='/product' element={<ProductPage/>} />
         <Route path='/kategori' element={<Kategori/>} />
       </Route>
     </Routes>

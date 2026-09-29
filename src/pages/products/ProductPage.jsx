@@ -1,12 +1,12 @@
 import { useState } from "react"
-import ProductFilter from "../components/products/ProductFilter"
-import ProductHeader from "../components/products/ProductHeader"
-import ProductStats from "../components/products/ProductStats"
-import ProductTable from "../components/products/ProductTable"
-import ProductForm from "../components/products/ProductForm"
-import product from "../data/product"
+import ProductFilter from "@/features/products/ProductFilter"
+import ProductHeader from "@/features/products/ProductHeader"
+import ProductStats from "@/features/products/ProductStats"
+import ProductTable from "@/features/products/ProductTable"
+import ProductForm from "@/features/products/ProductForm"
+import product from "@/data/product"
 
-const Product = () => {
+const ProductPage = () => {
 
     const [isOpen, setIsOpen] = useState(false)
      const [listProduct, setListProduct] = useState(product)
@@ -30,4 +30,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default ProductPage

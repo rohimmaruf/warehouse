@@ -1,4 +1,4 @@
-import PageTitle from "../ui/PageTitle"
+import PageTitle from "@/components/PageTitle"
 
 const ProductHeader = ({onAddProduct}) => {
     return(

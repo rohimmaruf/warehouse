@@ -1,6 +1,6 @@
 import { Album, Cuboid, Download, Home, House, Icon, Layers, MapIcon, RotateCcwClock, Settings, Upload, User, User2, UserRoundCog, Warehouse } from 'lucide-react'
-import Menu from './sidebar/Menu'
-import ItemMenu from './sidebar/Menu'
+// import Menu from '@/layout/main/sidebar/Menu'
+import ItemMenu from '@/layouts/main/sidebar/ItemMenu'
 import { Link, Links } from 'react-router-dom'
 const Sidebar = () => {
 

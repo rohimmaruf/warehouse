@@ -1,7 +1,7 @@
 import { ChartAreaIcon, ChartBar, ChartBarDecreasing, ChartColumn } from "lucide-react"
-import LineGrafik from "./grafik/Linegrafik"
-import Piegrafik from "./grafik/Piegrafik"
-import TitleGrid from "./Titlegrid"
+import LineGrafik from "@/features/dashboard/grafik/Linegrafik"
+// import Piegrafik from "@/grafik/Piegrafik"
+import TitleGrid from "@/features/dashboard/Titlegrid"
 
 const Grafik = () => {
   return (

@@ -1,10 +1,9 @@
 import { Pen, PenBox, PenBoxIcon, Trash, Trash2 } from "lucide-react"
-import Titlebox from "../components/general/Titlebox"
-// import kategori from "../data/kategori"
+import Titlebox from "@/components/general/Titlebox"
+import kategori from "../data/kategori"
 import { useState } from "react"
-import Formkategori from "../components/kategori/Formkategori"
-import kategori from "../data/kategori"
-import kategori from "../data/kategori"
+import Formkategori from "@/components/kategori/Formkategori"
+// import kategori from "@/data/kategori"
 
 const Kategori = () => {
     // console.log(kategori);

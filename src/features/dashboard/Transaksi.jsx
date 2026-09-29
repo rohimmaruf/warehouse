@@ -1,7 +1,7 @@
 
 import { File, FileText } from "lucide-react";
-import transaksi from "../../data/transaksi";
-import TitleGrid from "./Titlegrid"
+import transaksi from "@/data/transaksi";
+import TitleGrid from "@/features/dashboard/Titlegrid"
 
 const Transaksi = () => {
 
