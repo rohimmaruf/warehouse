@@ -8,7 +8,7 @@ const product = [
                 unit: "Pcs",
                 stock: 25,
                 minimumStock: 10,
-                status: "Normal",
+                status: "normal",
             },
             {
                 id: 2,
@@ -19,7 +19,7 @@ const product = [
                 unit: "Pcs",
                 stock: 8,
                 minimumStock: 10,
-                status: "Low Stock",
+                status: "lowstock",
             },
             {
                 id: 3,
@@ -30,7 +30,7 @@ const product = [
                 unit: "Pcs",
                 stock: 45,
                 minimumStock: 15,
-                status: "Normal",
+                status: "normal",
             },
             {
                 id: 4,
@@ -41,7 +41,7 @@ const product = [
                 unit: "Pcs",
                 stock: 32,
                 minimumStock: 10,
-                status: "Normal",
+                status: "normal",
             },
             {
                 id: 5,
@@ -52,7 +52,7 @@ const product = [
                 unit: "Roll",
                 stock: 6,
                 minimumStock: 10,
-                status: "Low Stock",
+                status: "lowstock",
             },
         ]
 

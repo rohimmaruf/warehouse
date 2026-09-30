@@ -20,17 +20,17 @@ const ProductTable = ({ product }) => {
 
             <table className="w-full">
 
-                <thead className="border-b-2 border-gray-300">
+                <thead className="border-b-2 border-gray-300 bg-warehouse-bg">
                     <tr>
-                        <th className="px-4 py-3 text-left">Code</th>
+                        <th className="px-4 py-3 text-left ">Code</th>
                         <th className="px-4 py-3 text-left">Product Name</th>
                         <th className="px-4 py-3 text-left">Category</th>
                         <th className="px-4 py-3 text-left">Location</th>
                         <th className="px-4 py-3 text-left">Unit</th>
-                        <th className="px-4 py-3 text-left">Stock</th>
-                        <th className="px-4 py-3 text-left">Min.Stock</th>
+                        <th className="px-4 py-3 text-center">Stock</th>
+                        <th className="px-4 py-3 text-center">Min.Stock</th>
                         <th className="px-4 py-3 text-left">Status</th>
-                        <th className="px-4 py-3 text-left">Action</th>
+                        <th className="px-4 py-3 text-center">Action</th>
                     </tr>
                 </thead>
 
@@ -68,10 +68,12 @@ const ProductTable = ({ product }) => {
                                     <td className="px-4 py-3">{location}</td>
                                     <td className="px-4 py-3">{unit}</td>
                                     <td
-                                        className={`px-4 py-3 font-bold  ${stock < 10 ? "text-red-500" : "text-green-500"}`}
+                                        className={`px-4 py-3 font-bold  ${stock < 10 ? "text-red-500 text-center" : "text-green-500 text-center"}`}
                                     >{stock}</td>
-                                    <td className="px-4 py-3">{minimumStock}</td>
-                                    <td className="px-4 py-3">{status}</td>
+                                    <td className="px-4 py-3 text-center">{minimumStock}</td>
+                                    <td className="p-4 ">
+                                        <span className={`px-4 py-1 text-center rounded-xl w-fit ${status === "normal" ? "bg-green-200 text-text-green font-bold" : "bg-red-200 text-red-500 font-bold"}`}>{status}</span>
+                                    </td>
                                     <td className="px-4 py-3  justify-center flex items-center">
                                         <PenBoxIcon
                                             className="text-[#1451d7] 
