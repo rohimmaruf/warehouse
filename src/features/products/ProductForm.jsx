@@ -2,6 +2,7 @@ import { Box, Save } from "lucide-react"
 import Button from "@/components/Button"
 import TitleForm from "@/components/TitleForm"
 import { useState } from "react"
+import HelperText from "@/components/HelperText"
 
 const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
@@ -33,33 +34,40 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
     }
     return (
         <div className="  fixed bg-black/30 inset-0 z-50  justify-center items-center flex flex-col">
-            <div className="bg-white shadow-2xl  p-4 gap-4 items-start flex flex-col w-fit h rounded-2xl">
+            <div className="bg-white shadow-2xl  p-4 gap-4 items-start flex flex-col w-4xl rounded-2xl">
                 {/* Title Form */}
                 <div className="w-full flex  items-center gap-4  border-gray-200">
-                    <Box className="bg-amber-500  p-2 rounded-xl" size={60}/>
+                    <Box className="bg-amber-500  p-2 rounded-xl" size={60} />
                     <div>
                         <h1 className="font-bold text-2xl">Add Product</h1>
                         <p className="text-gray-500  w-full font-semibold" >Add new Product on system</p>
                     </div>
-                    
+
                 </div>
                 <p className="text-text-green font-bold">Informasi Product</p>
                 {/* Form */}
-                <div className="flex gap-4">
+                <div className="flex gap-4 border-2 border-amber-400 w-full ">
 
-                    <div>
-                        <TitleForm title="Kode Product" />
-                        {/* Bikin Handler */}
-                        <input
-                            className="border-gray-300 border-2 w-full p-2 rounded-xl"
-                            type="text"
-                            placeholder="Contoh: BRG-001"
-                            name="code"
-                            onChange={onInput}
-                        />
+                    <div className="border-2 border-blue-700 w-full gap-4 flex flex-col">
+
+                        {/* Kode Product */}
+                        <div>
+                            <TitleForm title="Kode Product *" />
+                            <input
+                                className="border-gray-300 border-2 px-2 py-1 rounded-lg w-full "
+                                type="text"
+                                placeholder="Contoh: BRG-001"
+                                name="code"
+                                onChange={onInput}
+                            />
+                            <HelperText>Kode unik untuk identifikasi produk</HelperText>
+                        </div>
+
+
+                        {/* Categori */}
                         <TitleForm title="Categori" />
                         <select
-                            className="border-gray-300 border-2 w-full p-2"
+                            className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
                             name="category"
                             id=""
                             onChange={onInput}
@@ -69,58 +77,81 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
                             <option value="elektronik">Elektronik</option>
                             <option value="aksesoris">aksesoris</option>
                         </select>
-                        <TitleForm title="Location" />
-                        <select
-                            className="border-gray-300 border-2 w-full p-2"
-                            name="location"
-                            id=""
-                            onChange={onInput}
-                        >
-                            <option value="Select">Pilih</option>
-                            <option value="A001">A001</option>
-                            <option value="A002">A002</option>
-                        </select>
-                        <TitleForm title="Stock Minimum" />
-                        <input
-                            className="border-gray-300 border-2 w-full p-2 ro"
-                            type="text"
-                            placeholder="0"
-                            name="minimumStock"
-                            onChange={onInput}
-                        />
-                    </div>
-                    <div>
-                        <TitleForm title="Prodect Name" />
-                        {/* Bikin Handler */}
-                        <input
-                            className="border-gray-300 border-2 w-full p-2 ro"
-                            type="text"
-                            placeholder="Contoh : Laptop"
-                            name="name"
-                            onChange={onInput}
-                        />
-                        <TitleForm title="Unit" />
-                        <select
-                            // onChange={inputChange}
-                            className="border-gray-300 border-2 w-full p-2"
-                            name="unit"
-                            id=""
-                            onChange={onInput}
-                        >
-                            <option value="Select">Select Unit</option>
-                            <option value="pcs">PCS</option>
-                            <option value="unit">Unit</option>
-                        </select>
-                        <TitleForm title="Stock" />
-                        {/* Bikin Handler */}
-                        <input
-                            className="border-gray-300 border-2 w-full p-2 ro"
-                            type="text"
-                            placeholder="0"
-                            name="stock"
-                            onChange={onInput}
-                        />
 
+                        {/* Location */}
+                        <div>
+                            <TitleForm title="Location" />
+                            <select
+                                className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
+                                name="location"
+                                id=""
+                                onChange={onInput}
+                            >
+                                <option value="Select">Pilih</option>
+                                <option value="A001">A001</option>
+                                <option value="A002">A002</option>
+                            </select>
+                            <HelperText>Location Product</HelperText>
+                        </div>
+
+                        {/* Stock Minimum */}
+                        <div>
+                            <TitleForm title="Stock Minimum" />
+                            <input
+                                className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
+                                type="text"
+                                placeholder="0"
+                                name="minimumStock"
+                                onChange={onInput}
+                            />
+                            <HelperText>Minimum stok level </HelperText>
+                        </div>
+                    </div>
+                    <div className="border-2 w-full flex flex-col gap-4">
+
+                        {/* Product Name */}
+                        <div>
+                            <TitleForm title="Prodect Name" />
+                            <input
+                                className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
+                                type="text"
+                                placeholder="Contoh : Laptop"
+                                name="name"
+                                onChange={onInput}
+                            />
+                            <HelperText>Product name</HelperText>
+                        </div>
+
+                        {/* Unit */}
+                        <div>
+                            <TitleForm title="Unit" />
+                            <select
+                                // onChange={inputChange}
+                                className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
+                                name="unit"
+                                id=""
+                                onChange={onInput}
+                            >
+                                <option value="Select">Select Unit</option>
+                                <option value="pcs">PCS</option>
+                                <option value="unit">Unit</option>
+                            </select>
+                            <HelperText>Exampel: pcs, unit</HelperText>
+                        </div>
+
+                        <div>
+                            {/* Stock */}
+                            <TitleForm title="Stock" />
+                            {/* Bikin Handler */}
+                            <input
+                                className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
+                                type="text"
+                                placeholder="0"
+                                name="stock"
+                                onChange={onInput}
+                            />
+                            <HelperText>Jumlah stock saat ini</HelperText>
+                        </div>
                     </div>
                 </div>
 
