@@ -3,6 +3,7 @@ import Button from "@/components/Button"
 import TitleForm from "@/components/TitleForm"
 import { useState } from "react"
 import HelperText from "@/components/HelperText"
+import InformationText from "@/components/InfomationText"
 
 const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
@@ -26,7 +27,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
             ...detailProduct,
             id: Date.now()
         }
-        console.log(newProdact);
+        // console.log(newProdact);
         onAddProduct(newProdact)
         onCancel()
 
@@ -44,15 +45,15 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
                     </div>
 
                 </div>
-                <p className="text-text-green font-bold">Informasi Product</p>
+                <InformationText>Product Information</InformationText>
                 {/* Form */}
-                <div className="flex gap-4 border-2 border-amber-400 w-full ">
+                <div className="flex gap-4  border-amber-400 w-full ">
 
-                    <div className="border-2 border-blue-700 w-full gap-4 flex flex-col">
+                    <div className=" border-blue-700 w-full gap-4 flex flex-col">
 
                         {/* Kode Product */}
                         <div>
-                            <TitleForm title="Kode Product *" />
+                            <TitleForm>Kode Product *</TitleForm>
                             <input
                                 className="border-gray-300 border-2 px-2 py-1 rounded-lg w-full "
                                 type="text"
@@ -65,7 +66,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
 
                         {/* Categori */}
-                        <TitleForm title="Categori" />
+                        <TitleForm >Categori</TitleForm>
                         <select
                             className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
                             name="category"
@@ -80,7 +81,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
                         {/* Location */}
                         <div>
-                            <TitleForm title="Location" />
+                            <TitleForm>Location</TitleForm>
                             <select
                                 className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
                                 name="location"
@@ -96,7 +97,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
                         {/* Stock Minimum */}
                         <div>
-                            <TitleForm title="Stock Minimum" />
+                            <TitleForm>Stock Minimum</TitleForm>
                             <input
                                 className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
                                 type="text"
@@ -107,12 +108,11 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
                             <HelperText>Minimum stok level </HelperText>
                         </div>
                     </div>
-                    <div className="border-2 w-full flex flex-col gap-4">
+                    <div className="w-full flex flex-col gap-4">
 
                         {/* Product Name */}
                         <div>
-                            <TitleForm title="Prodect Name" />
-                            <input
+                            <TitleForm>Prodect Name</TitleForm>                            <input
                                 className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
                                 type="text"
                                 placeholder="Contoh : Laptop"
@@ -124,7 +124,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
                         {/* Unit */}
                         <div>
-                            <TitleForm title="Unit" />
+                            <TitleForm>Unit</TitleForm>
                             <select
                                 // onChange={inputChange}
                                 className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
@@ -141,7 +141,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
 
                         <div>
                             {/* Stock */}
-                            <TitleForm title="Stock" />
+                            <TitleForm>Stock</TitleForm>
                             {/* Bikin Handler */}
                             <input
                                 className="border-gray-300 border-2 w-full px-2 py-1 rounded-lg"
@@ -153,6 +153,25 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
                             <HelperText>Jumlah stock saat ini</HelperText>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <InformationText>Additional Infomation</InformationText>
+                    <div className="flex justify-between">
+                        <div>
+                            <TitleForm>Description (Opsional)</TitleForm>
+                            <textarea
+                                className="border-gray-300 border-2"
+                                name=""
+                                placeholder="Input description Product ....."
+                            >
+                            </textarea>
+                        </div>
+                        <div>
+                            <TitleForm>Picture Prodect</TitleForm>
+                            <input type="image" />
+                        </div>
+                    </div>
+
                 </div>
 
 

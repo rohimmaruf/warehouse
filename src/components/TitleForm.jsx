@@ -1,6 +1,6 @@
-const TitleForm = ({title=""}) => {
+const TitleForm = ({children}) => {
     return(
-        <h2 className="text-xl font-medium">{title}</h2>
+        <h2 className="text-xl font-medium">{children}</h2>
     )
 }
 

@@ -11,11 +11,17 @@ const ProductPage = () => {
     const [isOpen, setIsOpen] = useState(false)
      const [listProduct, setListProduct] = useState(product)
 
+
     const onAddListProdact = (e) => {
         console.log(e);
-        setListProduct(
-            (prev) => ([...prev, e])
-        )
+        // setListProduct(
+        //     (prev) => ([...prev, e])
+        // )
+        setListProduct( (prev) => ([...prev, e]) )
+        console.log(listProduct);
+        
+        
+        
         
     }
 
@@ -25,7 +31,9 @@ const ProductPage = () => {
             <ProductStats/>
             <ProductFilter/>
             <ProductTable product={listProduct}/>
-            {isOpen && <ProductForm onCancel={() => {setIsOpen(false)}} onAddProduct={onAddListProdact} />}
+            {isOpen && <ProductForm 
+            onCancel={() => {setIsOpen(false)}} 
+            onAddProduct={onAddListProdact} />}
         </div>
     )
 }

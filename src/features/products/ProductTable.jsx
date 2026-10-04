@@ -1,9 +1,12 @@
 import { PenBoxIcon, Trash2 } from "lucide-react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProductTable = ({ product }) => {
 
     const [listProduct, setListProduct] = useState(product)
+
+    console.log(product);
+    
 
     const onEdit = (id) => {
         return console.log(id);
@@ -14,6 +17,10 @@ const ProductTable = ({ product }) => {
         return setListProduct((prev) => prev.filter((e) => e.id !== id))
 
     }
+
+    useEffect(() => (
+        setListProduct(product)
+    ), [product])
 
     return (
         <div className="w-full overflow-x-auto bg-warehouse-surface shadow rounded-xl p-4">
