@@ -30,6 +30,7 @@ const ProductForm = ({ onCancel = () => { }, onAddProduct = () => { } }) => {
         // console.log(newProdact);
         onAddProduct(newProdact)
         onCancel()
+        alert("Data Berhasil tersimpan")
 
 
     }
