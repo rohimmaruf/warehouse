@@ -1,25 +1,33 @@
 import { PenBoxIcon, Trash2 } from "lucide-react"
 import { useEffect, useState } from "react";
 
-const ProductTable = ({ product }) => {
+const ProductTable = ({ 
+    product, 
+    onModal = () => { },
+    onDelete = () => {}
+    
+}) => {
 
     const [listProduct, setListProduct] = useState(product)
 
     console.log(product);
-    
 
     const onEdit = (id) => {
         return console.log(id);
     }
 
-    const onDelete = (id) => {
-
-        return setListProduct((prev) => prev.filter((e) => e.id !== id))
-
+    const onClickDelete = (id) => {
+        onModal()
+        onDelete(id)
     }
+    // Fungsi sebelumnya
+    // const onDelete = (id) => {
 
-    useEffect(() => (
-        setListProduct(product)
+    //     return setListProduct((prev) => prev.filter((e) => e.id !== id))
+
+    // }
+
+    useEffect(() => (setListProduct(product)
     ), [product])
 
     return (
@@ -84,11 +92,16 @@ const ProductTable = ({ product }) => {
                                     <td className="px-4 py-3  justify-center flex items-center">
                                         <PenBoxIcon
                                             className="text-[#1451d7] 
-                                        cursor-pointer"
-                                            onClick={() => (onEdit(id))} /><span>
+                                            cursor-pointer"
+                                            onClick={() => (onEdit(id))} />
+                                        <span>
                                             <Trash2
                                                 className="text-[#d22c30] cursor-pointer"
-                                                onClick={() => (onDelete(id))} /></span></td>
+                                                // onClick={() => (onDelete(id))} 
+                                                onClick={() => onClickDelete(id)}
+                                                
+                                            />
+                                        </span></td>
                                 </tr>
                             )
                         }
